@@ -1,8 +1,0 @@
----
-- name: Check uptime Demo..!!!
-  hosts: all
-
-  tasks:
-
-  - name: Command Uptime
-    shell: show system
