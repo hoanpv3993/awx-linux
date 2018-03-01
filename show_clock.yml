@@ -1,15 +1,11 @@
 ---
 - name: Show clock Cisco...!!!
   hosts: all
-  gather_facts: no
-  connection: local
 
   tasks:
 
-  - name: IOS | Show clock
-    ios_command:
-      commands:
-        - show clock
+  - name: Command Uptime
+    shell: show clock
     register: clock
-
+    
   - debug: msg="{{ clock.stdout }}"
