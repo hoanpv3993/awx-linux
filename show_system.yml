@@ -1,0 +1,8 @@
+---
+- name: Check system information..!!!
+  hosts: all
+
+  tasks:
+
+  - name: system info
+shell: show system
