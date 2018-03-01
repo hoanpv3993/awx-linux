@@ -2,7 +2,8 @@
 - name: Show clock Cisco...!!!
   hosts: all
   gather_facts: no
- 
+  connection: local
+
   tasks:
 
   - name: IOS | Show clock
