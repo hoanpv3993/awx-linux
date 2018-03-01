@@ -1,8 +1,8 @@
 ---
-- name: Check system information..!!!
+- name: Check uptime Demo..!!!
   hosts: all
 
   tasks:
 
-  - name: system info
-shell: show system
+  - name: Command Uptime
+    shell: uptime
