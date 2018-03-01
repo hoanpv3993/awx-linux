@@ -6,3 +6,6 @@
 
   - name: Command Uptime
     shell: uptime
+    register: uptime
+    
+  - debug: msg="{{ uptime.stdout }}"
