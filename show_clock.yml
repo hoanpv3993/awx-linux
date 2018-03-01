@@ -1,0 +1,13 @@
+---
+- name: Check uptime Demo..!!!
+  hosts: all
+
+  tasks:
+
+  - name: IOS | Show clock
+    ios_command:
+      commands:
+        - show clock
+    register: clock
+
+  - debug: msg="{{ clock.stdout }}"
