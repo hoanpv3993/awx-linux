@@ -1,5 +1,5 @@
 ---
-- name: Check uptime Demo..!!!
+- name: Server Linux uptime...!!!
   hosts: all
 
   tasks:
