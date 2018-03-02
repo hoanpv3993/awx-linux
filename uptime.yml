@@ -1,10 +1,11 @@
 ---
 - name: Server Linux uptime...!!!
   hosts: all
-
+  gather_facts: no
+  
   tasks:
 
-  - name: Command Uptime
+  - name: Show Uptime
     shell: uptime
     register: uptime
     
